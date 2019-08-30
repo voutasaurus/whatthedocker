@@ -1,4 +1,4 @@
-FROM golang:1.12 AS build
+FROM golang:1.12.9 AS build
 ADD . /app
 RUN cd /app && go build -o app
 
